@@ -1,0 +1,12 @@
+body{
+  background-color: rgb(212, 204, 212);
+}
+
+.tracks{
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.item{
+  margin-bottom: 18px;
+}

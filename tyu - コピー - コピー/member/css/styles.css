@@ -1,0 +1,35 @@
+body{
+  background-color: rgba(197, 188, 236, 0.993);
+}
+
+.list{
+  background-color: rgb(224, 211, 199);
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-bottom: 18px;
+  padding-right: 9px;
+  margin-left: 18px;
+  margin-right: 18px;
+  border: solid 0.9px black;
+}
+
+.juji{
+  margin-bottom: 18px;
+}
+
+.roche{
+  margin-bottom: 18px;
+}
+
+.smtch{
+  margin-bottom: 18px;
+}
+
+.chimaki{
+  margin-bottom: 18px;
+}
+
+.izki{
+  margin-bottom: 18px;
+}

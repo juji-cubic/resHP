@@ -1,0 +1,168 @@
+body {
+  color: black;
+  border: 9px solid rgba(8, 2, 43, 0.342);
+  font-size: 18px;
+  background-color: #efefef;
+}
+
+
+header {
+  background-color: #473f4be0;
+   padding-top: 36px;
+  padding-bottom: 36px; 
+}
+
+
+.icon img{
+  background-color: blueviolet;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex; 
+}
+
+.scroll {
+  margin: 0%;
+  height: 369px;
+  
+  padding    : 2%;
+  /* border     : 1px solid #666; */
+  background : #fff;
+  overflow   : hidden;
+}
+.item{
+  display     : inline-block;
+  padding-left: 100%;
+  animation   : scrollAnime 3s linear infinite;
+}
+@keyframes scrollAnime{
+    0% { transform: translateX(0)}
+  100% { transform: translateX(-100%)}
+}
+
+.sine  {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+/* .horizontal-list {
+  overflow-x: hidden;
+  white-space: nowrap;
+  animation   : scrollAnime 3s linear infinite;
+  height: 369px;
+} */
+
+/* .item {
+  /* 横スクロール用 */
+  /* display: inline-block;
+  width: 90%; */
+
+  /* 見た目調整 */
+  /* height: 369px; */
+  /* margin: 16px;
+  font-size: 48px;
+  background: rgba(255, 0, 0, 0.4); */
+/* } */
+
+
+ .slide {
+  position   : relative;
+  overflow   : hidden;
+                    /* 画像のサイズに合わせて変更 */
+  width      : 400px;
+  height     : 400px;
+  margin     : auto;     
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+ 
+ /*=== 画像の設定 ======================================= */
+.slide img {
+  display    : block;
+  position   : absolute;
+                      /* 画像のサイズを表示エリアに合せる */
+  width      : inherit;
+  height     : inherit;
+  left       : -100%;
+  animation  : slideAnime 36s ease infinite;
+}
+ 
+ /*=== スライドのアニメーションを段差で開始する ========= */
+.slide img:nth-of-type(1) { animation-delay: 0s }
+.slide img:nth-of-type(2) { animation-delay: 4s }
+.slide img:nth-of-type(3) { animation-delay: 8s }
+.slide img:nth-of-type(4) { animation-delay: 12s }
+.slide img:nth-of-type(5) { animation-delay: 16s }
+.slide img:nth-of-type(6) { animation-delay: 20s }
+.slide img:nth-of-type(7) { animation-delay: 24s }
+.slide img:nth-of-type(8) { animation-delay: 28s }
+.slide img:nth-of-type(9) { animation-delay: 32s }
+ 
+ /*=== スライドのアニメーション ========================= */
+@keyframes slideAnime{
+   0% { left: -100% }
+   1% { left: 0     }
+  10% { left: 0     }
+  11% { left: 100%  }
+ 100% { left: 100%  }
+}
+
+.news{
+  background-color: white;
+  width: 900px; 
+  height: 600px;
+  margin-top: 9px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+ 
+   border-style: solid;
+   border-color: black;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+  color:black;
+  margin-left: 90px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+  color: #59478f;
+  font-size: 90%;
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+
+.newstitle{
+  color: #59478f;
+  font-weight: lighter;
+  font-size: 18px;
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+}
+
+.button {
+  display       : inline-block;
+  font-size     : 14pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 11px 11px;   /* 余白       */
+  background    : #000066;     /* 背景色     */
+  color         : #ff4da6;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 4px 4px 50px #666666;  /* 影の設定 */
+  border        : 2px solid #000066;    /* 枠の指定 */
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #000066;     /* 背景色     */
+  background    : #ff4da6;     /* 文字色     */
+}
+/* 
+.dai{
+  color: black;
+} */
+
+

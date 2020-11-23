@@ -1,0 +1,32 @@
+body{
+  background-color: #070a25ef;
+  color: aliceblue;
+}
+
+.pictures{
+  margin-left: 90px;
+}
+
+.item{
+  position: relative;
+  overflow:hidden;
+  display: table;
+  border-style: solid;
+  border-color: rgba(207, 115, 202, 0.699);
+  width: 600px;
+  height: 600px;
+  background-color: white;
+}
+
+.pictures img{
+  position: absolute;
+  width: auto;
+  height: 100%;
+  overflow:hidden;
+  transform: translate(-50%, -50%);
+  left:50%;
+  top: 50%;
+  /* border-style: solid;
+  border-color: black; */
+}
+
